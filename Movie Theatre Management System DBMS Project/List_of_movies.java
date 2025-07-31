@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.sql.*;
-import java.sql.DriverManager;
 
 public class List_of_movies extends JFrame {
 
@@ -160,9 +159,17 @@ public class List_of_movies extends JFrame {
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+    // --- YOUR NEW CODE STARTS HERE ---
 
+    int confirmation = JOptionPane.showConfirmDialog(this, "Are you sure you want to book the tickets?", "Confirm Booking", JOptionPane.YES_NO_OPTION);
+
+    if (confirmation == JOptionPane.YES_OPTION) {
+        // This code only runs if the user clicks "Yes"
         workWithDatabase();
     }
+
+    // --- YOUR NEW CODE ENDS HERE ---
+}
     public void workWithDatabase()
     {
         String a=(String) jComboBox1.getSelectedItem();
