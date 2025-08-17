@@ -1,5 +1,6 @@
-# DBMS_Project
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# DBMS_Project
+
 
 Movie Theatre Management System using Java and MySQL.
 
